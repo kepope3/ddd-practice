@@ -35,7 +35,7 @@ namespace ConsoleApp
         {
             try
             {
-                var eventType = (EventType.EventTypeEnum)Enum.Parse(typeof(EventType.EventTypeEnum), eventTypeString);
+                var eventType = (Application.EventType.EventTypeEnum)Enum.Parse(typeof(Application.EventType.EventTypeEnum), eventTypeString);
 
                 _addTimeRecordHandler.Handle(new AddTimeRecord(author, eventType));
             }

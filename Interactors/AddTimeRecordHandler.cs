@@ -16,7 +16,7 @@ namespace Application
         {
             try
             {
-                var timeRecord = new TimeRecord(DateTime.Now, addTimeRecord.Author, addTimeRecord.Event);
+                var timeRecord = new TimeRecord(DateTime.Now, addTimeRecord.Author, (Domain.EventType.EventTypeEnum)addTimeRecord.Event);
                 _timeKeeperRepository.Save(timeRecord);
             }
             catch 
