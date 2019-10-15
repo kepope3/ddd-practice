@@ -39,9 +39,9 @@ namespace ConsoleApp
 
                 _addTimeRecordHandler.Handle(new AddTimeRecord(author, eventType));
             }
-            catch
+            catch(Exception ex)
             {
-                throw new Exception();
+                throw ex;
             }
         }
     }
